@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+
+<title>Verificando constancia...</title>
+
+</head>
+
+<body>
+
+<h2>Verificando documento...</h2>
+
+<script>
+
+const params =
+new URLSearchParams(
+window.location.search
+);
+
+const id = params.get("id");
+
+if(id){
+
+window.location.href =
+"https://script.google.com/macros/s/AKfycbw_5Zs3tCOWH3CYaHillDPN0iyL7F7E-UXhItkTPx77jMsmWiKI2X9cQOv0s63z60J_pw/exec?id="
++ id;
+
+}
+
+</script>
+
+</body>
+
+</html>
